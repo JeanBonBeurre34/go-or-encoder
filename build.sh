@@ -1,0 +1,1 @@
+docker build -t golang-exploit-encoder . && docker create --name temp-container-exploit-encoder golang-exploit-encoder && docker cp temp-container-exploit-encoder:/encoder ./encoder && docker rm temp-container-exploit-encoder
